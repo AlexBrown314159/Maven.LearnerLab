@@ -1,13 +1,13 @@
 package io.zipcoder.interfaces;
 
 public class Person {
-    private final Long id;
-    private String name;
+     final Long id;
+     String name;
 
 
-    public Person(Long inId, String inName) {
-        this.id = inId;
-        this.name = inName;
+    public Person(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
 
