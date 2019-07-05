@@ -1,6 +1,7 @@
 package io.zipcoder.interfaces;
 
 public final class Students extends People {
+
     public static final Students INSTANCE = new Students();
 
 
@@ -66,7 +67,6 @@ public final class Students extends People {
        this.add(Bob);
 
     }
-
 
 
     public static Students getInstance() {

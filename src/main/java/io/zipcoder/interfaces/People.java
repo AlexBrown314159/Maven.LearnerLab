@@ -9,14 +9,23 @@ public class People {
 
     ArrayList<Person> personList = new ArrayList();
 
+
+
+
     public void People() {
 
     }
+
+
+
 
     public void add(Person person) {
         personList.add(person);
 
     }
+
+
+
 
     public Person findById(Long id) {
 
@@ -32,6 +41,10 @@ public class People {
         return null;
     }
 
+
+
+
+
     public Boolean contains(Person person) {
 
             if (personList.contains(person)) {
@@ -40,10 +53,20 @@ public class People {
         return false;
     }
 
+
+
+
+
+
     public void remove(Person person) {
 
          personList.remove(person);
     }
+
+
+
+
+
 
     public void remove(Long id) {
 
@@ -58,6 +81,10 @@ public class People {
         }
     }
 
+
+
+
+
     public void removeall() {
 
         for (int i = 0; i < personList.size(); i++) {
@@ -66,15 +93,34 @@ public class People {
         }
     }
 
+
+
+
+
+
+
     public Integer count() {
 
         return personList.size();
     }
 
+
+
+
+
+
+
+
     public ArrayList toArray() {
 
         return personList;
     }
+
+
+
+
+
+
 
     public void iterator() {
 

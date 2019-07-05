@@ -10,27 +10,37 @@ public class TestStudents {
     }
 
     @Test
-    public void TestCount() {
+    public void TestStudents1() {
 
-        Students students = new Students();
+        Students testStudents = Students.getInstance();
 
-        students = Students.getInstance();
-        System.out.println(students.count());
+            Long expected = 1008L;
 
-        for (Long i = 1001L; i <+ 1029L; i++) {
-
-            Person newStudent = students.findById(i);
-            System.out.println("***" + newStudent.getName() + "***");
-
-            Long expected = i;
-
-            Long actual = newStudent.getId();
+            Long actual = testStudents.personList.get(7).getId();
 
             Assert.assertEquals(expected, actual);
 
-        }
+    }
+
+
+    @Test
+    public void TestStudents2() {
+
+        Students testStudents = Students.getInstance();
+
+//        Student Caleb = new Student(1008L, "Caleb");
+
+        String expected = "Caleb";
+
+        String actual = testStudents.personList.get(7).getName();
+
+        Assert.assertEquals(expected, actual);
 
     }
+
+
+
+
 
 }
 
